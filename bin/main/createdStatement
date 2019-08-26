@@ -1,0 +1,12 @@
+CREATE TABLE `board_forum` (
+  `forum_Id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `forum_Subject` varchar(100) NOT NULL,
+  `forum_Content` text,
+  `forum_Created` datetime NOT NULL,
+  `user_Id` int(11) unsigned NOT NULL,
+  `user_Name` varchar(30) NOT NULL,
+  `forum_Hit` int(11) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`forum_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
